@@ -62,7 +62,7 @@ def on_request(name, request_type, response, response_time, exception, **kwargs)
           "\n", f'Response Time : {Response_time:.3f}s'
           "\n", f'Response : {response.status_code}', "\n",
           f'Exception : {exception}', "\n", kwargs, "\n")
-    assert response_time//1000 < 2
+    assert response_time/1000 < 2
 
 
 # Define a class inheriting HttpUser, representing simulated user
